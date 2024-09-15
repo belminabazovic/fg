@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FRENCH GRUPPO FC</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="contentContainer">
+            <nav id="navigationContainer">
+                <li id="logoContainer">
+                    <a href="index.html">
+                        <img src="img/logo.png" id="logo">
+                    </a>
+                </li>
+
+                <div id="navLinksContainer">
+                    <li><a href="men.html" class="navLink">MEN'S TEAM</a></li>
+                    <li><a href="women.html" class="navLink">WOMEN'S TEAM</a></li>
+                    <li><a href="shop.html" class="navLink">TICKETS</a></li>
+                    <li><a href="shop.html" class="navLink">SHOP</a></li>
+                    <li><a href="club.html" class="navLink" id="clubLink" >CLUB</a></li>
+                    <li><a href="halloffame.html" class="navLink" id="hofLink" >ACADEMY</a></li>
+                </div>
+                
+                <div id="navRightContainer">
+                    <button id="memberBtn">BECOME A PIRATE</button>
+                </div>
+            </nav>
+            
+            <div id="firstGrid">
+                <div id="latestMatchContainer">
+                    <div id="dotsContainer">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                    
+                    <div class="slideshow-container">
+                        
+                        <div class="mySlides fade" id="matchReport">
+                            <div class="slideContent" id="newKit">
+                                <div id="kitSlideText">
+                                    <h2>NEW 2024-2025 AWAY KIT</h2>
+                                    <h5>OUT NOW</h5>
+                                </div>
+                                
+                                <button class="redBtn">ORDER YOUR SHIRT NOW</button>
+                            </div>
+                            
+                            <div class="bgOverlay">
+                                <img src="img/playerHalfRight.webp" class="overlayImg">
+                            </div>
+                        </div>
+
+                        <div class="mySlides fade" id="newKit">
+                            <div class="slideContent">
+                                <p>aaaa</p>
+                            </div>
+                            
+                            <div class="bgOverlay kitOverlay">
+                                <img src="img/playerHalfRight.webp" class="overlayImg">
+                            </div>    
+                        </div>
+
+                        <div class="mySlides fade" id="newSigning">
+                            <div class="slideContent">
+                                <p>zzzz</p>
+                            </div>
+                            
+                            <div class="bgOverlay">
+                                <img src="img/resultBg3.jpg" class="overlayImg">
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="nextMatch"></div>
+            </div>
+            
+            <div id="secondGrid">
+                <div id="mensTeam"></div>
+                <div id="womensTeam"></div>
+                <div id="shop"></div>
+            </div>
+            
+        </div>
+    </body>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 8000);
+}
+</script>
+</html>
