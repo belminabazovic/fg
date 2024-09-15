@@ -407,7 +407,7 @@ h2 {
 
 #latestMatchContainer {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     min-height: 300px;
     max-height: 1000px;
     overflow: hidden;
@@ -493,7 +493,7 @@ h2 {
 
 .overlayImg {
     height: 100%;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .slideContent {
