@@ -1,0 +1,230 @@
+@font-face { font-family: Medieval; src: url('font/MedievalTimes-AL7l6.ttf'); } 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type:  none;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1000;
+    background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    #contentContainer {
+        width: 90%;
+        height: auto;
+    }
+    
+    #navigationContainer {
+        padding: 5rem 0rem 2.5rem 0rem;
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #logo {
+        height: 5rem;
+        width: auto;
+    }
+
+    #navLinksContainer {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        grid-column-gap: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    #logoContainer {
+        text-align: center;
+    }
+
+    .navLink {
+        color: #FFFFFF;
+        font-size: 0.9rem;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        padding: 0.3rem 0rem;
+        border-bottom: 2px solid transparent;
+    }
+
+    .active {
+        border-bottom: 2px solid white;
+    }
+    
+    #textContainer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 7.5rem 0rem 5rem 0rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    #bottomTextContainer {
+        position: absolute;
+        z-index: 1;
+    }
+    
+    #topTextContainer {
+        position: absolute;
+        z-index: 2;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        color: #601616;
+        font-family: 'Medieval';
+        text-align: center;
+        line-height: 1;
+    }
+    
+    h2 {
+        color: #FFFFFF;
+        font-size: 1.75rem;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    
+    .top {
+        margin-top: 7.5rem;
+    }
+    
+    .mapContainer {
+        padding: 2.5rem 0rem 2.5rem 0rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #contentContainer {
+        max-width: 1200px;
+        width: 100%;
+        height: auto;
+    }
+    
+    #navigationContainer {
+        padding: 5rem 0rem;
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #logo {
+        height: 5rem;
+        width: auto;
+    }
+
+    #navLinksContainer {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        grid-column-gap: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    #logoContainer {
+        text-align: center;
+    }
+
+    .navLink {
+        color: #FFFFFF;
+        font-size: 0.9rem;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        padding: 0.3rem 0rem;
+        border-bottom: 2px solid transparent;
+    }
+    
+    .active {
+        border-bottom: 2px solid white;
+    }
+
+    #textContainer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10rem 0rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    #bottomTextContainer {
+        position: absolute;
+        z-index: 1;
+    }
+    
+    #topTextContainer {
+        position: absolute;
+        z-index: 2;
+    }
+    
+    h1 {
+        font-size: 7rem;
+        text-align: center;
+        color: #601616;
+        font-family: 'Medieval';
+        text-align: center;
+    }
+    
+    h2 {
+        color: #FFFFFF;
+        font-size: 1.75rem;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+    
+    
+    
+    .mapContainer {
+        padding: 5rem 0rem;
+    }
+
+    #mapBoxContainer {
+        width: 100;
+        border: 1px solid #1E1E1E;
+        aspect-ratio: 1 / 0.4;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    #clubMap {
+        height: 130%;
+        width: auto;
+        opacity: 0.2;
+    }
+ 
+}
