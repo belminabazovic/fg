@@ -66,11 +66,11 @@ body {
     }
 
     .menu {
-        width: 28px;
+        width: 26px;
     }
 
     .bag {
-        width: 34px;
+        width: 32px;
     }
     
     #logo {
@@ -168,7 +168,6 @@ body {
         width: 100%;
         height: 100%;
         overflow: hidden;
-        border: 1px solid #101010;
         position: relative;
         overflow: hidden;
     }
@@ -220,10 +219,6 @@ body {
         overflow: hidden;
     }
     
-    #matchReport {
-        
-    }
-    
     .bgOverlay {
         width: 100%;
         height: 100%;
@@ -246,20 +241,43 @@ body {
         height: 100%;
         padding: 0;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
     }
 
     #newSigningContent {
         display: grid;
         grid-template-rows: max-content max-content;
-        grid-row-gap: 0.75rem;
+        grid-row-gap: 0.5rem;
         align-content: center;
         padding: 1rem;
     }
 
+    #clubStatement {
+        display: grid;
+        grid-template-rows: max-content max-content;
+        grid-row-gap: 0.5rem;
+        align-content: center;
+        width: 90%;
+        padding: 1rem;
+    }
+
+    #matchReportContent {
+        display: grid;
+        grid-template-rows: max-content max-content;
+        grid-row-gap: 0.5rem;
+        align-content: center;
+        padding: 1rem;
+    }
+
+    #matchReportInfo {
+        display: grid;
+        grid-template-columns: auto max-content;
+        grid-column-gap: 0.5rem;
+    }
+
     h3 {
         color: white;
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-family: 'Manrope', sans-serif;
         font-weight: 800;
         line-height: 1;
@@ -270,11 +288,29 @@ body {
         font-style: italic;
         font-optical-sizing: auto;
         font-weight: 300;
-        font-size: 2rem;
-        color: white;
+        font-size: 1.75rem;
+        color: #9f9f9f;
     }
 
-    #newKit {
+    h5 {
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #9f9f9f;
+    }
+
+    .readMore {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-column-gap: 1rem;
+        align-items: center;
+    }
+
+    .arrow {
+        width: 24px;
     }
     
     #newSigning {
@@ -310,6 +346,25 @@ body {
     .active {
         background-color: #717171;
     }
+
+    #secondSection {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1.25rem;
+        margin-top: 5rem;
+    }
+
+    .secondContainer {
+        border-radius: 10px;
+        background-color: #121212;
+        aspect-ratio: 1 / 1;
+        border: 1px solid #181818;
+    }
+
+
+
+
+
     
     
     .fade {
@@ -321,143 +376,12 @@ body {
         from {opacity: .4} 
         to {opacity: 1}
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .secondContainer {
-        border-radius: 10px;
-        background-color: #121212 ;
-        aspect-ratio: 1 / 1;
-        border: 1px solid #181818;
-    }
-    
-    .top {
-        margin-top: 7.5rem;
-    }
-    
-    .teamSectionContainer {
-        padding: 2.5rem 0rem 2.5rem 0rem;
-    }
-    
-    .playerRowContainer {
-        margin-top: 2.5rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 1vw;
-        grid-row-gap: 2vw;
-    }
-    
-    .playerContainer {
-        border: 1px solid #1E1E1E;
-        aspect-ratio: 1 / 1.1;
-        cursor: pointer;
-        position: relative;
-    }
-    
-    .playerContainer:hover {
-        border: 1px solid #252525;
-        overflow: hidden;
-    }
-    
-    .playerInfoContainer {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        position: absolute;
-        z-index: 1;
-    }
-
-    .playerInfoLeft {
-        display: flex;
-        align-items: center;
-        padding-left: 0.6rem;
-        padding-top: 0.30rem;
-    }
-
-    .playerNatContainer {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-
-    .playerNatImgContainer {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
-
-    .natImg {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        
-    }
-
-    #vignetteContainer {
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgb(0,0,0);
-        background: -moz-radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7623643207282913) 49%, rgba(0,0,0,1) 100%);
-        background: -webkit-radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7623643207282913) 49%, rgba(0,0,0,1) 100%);
-        background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7623643207282913) 49%, rgba(0,0,0,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
-    }
-    
-    h5 {
-        color: white;
-        font-family: 'Manrope', sans-serif;
-        font-size: 0.8rem;
-        position: absolute;
-        font-weight: 900;
-        z-index: 2;
-    }
-    
-    .playerImageContainer {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 3;
-        background-image: url('img/mockup.png');
-        background-repeat: no-repeat;
-        background-position: bottom center;
-        background-size: auto 100%;
-    }
-
-    .gk {
-        background-image: url('img/mockup_g.png');
-    }
-
-    #sponsorGridContainer {
-        width: 100%;
-        margin: 5rem 0rem 10rem 0rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3rem;
-        justify-items: center;
-    }
-
-    .sponsorImg {
-        height: 2.5rem;
-        width: auto;
-    }
 }
+
+
+
+
+
 
 @media only screen and (min-width: 600px) {
     #contentContainer {
@@ -585,3 +509,5 @@ body {
         background-color: #cccccc;
         border-radius: 50%;
     }
+
+}
