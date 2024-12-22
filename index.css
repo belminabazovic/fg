@@ -347,6 +347,10 @@ body {
         background-color: #717171;
     }
 
+
+
+
+
     #secondSection {
         display: grid;
         grid-template-columns: 1fr;
@@ -359,8 +363,32 @@ body {
         background-color: #121212;
         aspect-ratio: 1 / 1;
         border: 1px solid #181818;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #shopBox {
+        background-image: url(img/shop.png);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: center center;
     }
 
+    #teamBox {
+        background-image: url(img/team2.png);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: center center;
+    }
+
+    #historyBox {
+        background-image: url(img/history.png);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: center center;
+    }
 
 
 
